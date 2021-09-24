@@ -10,29 +10,6 @@ const App = () => {
 
     HC_exporting(Highcharts)
 
-    const [dataState, setDataState] = useState([])
-
-    useEffect(() => {
-        let dataState = [
-            {name:'asd',data:[500521,480521,480521]},
-            {name:'jjj',data:[300000,300000,300000]},
-            {name:'12312312',data:[800000,900000,200000]}
-        ]
-        setDataState(
-            dataState.map(item => {
-                return {
-                    /*select: false,*/
-                    name: item.name,
-                    data: item.data
-                }
-            })
-        )
-    }, [])
-
-
-    console.log('dataState',dataState)
-    console.log('data',data)
-
     const [chartOptions] = useState({
         chart: {
             type: 'scatter',
@@ -95,27 +72,12 @@ const App = () => {
             }
         },
         series: data,
-        /*responsive: {
-            rules: [{
-                condition: {
-                    maxWidth: 1000
-                },
-                chartOptions: {
-                    legend: {
-                        layout: 'horizontal',
-                        align: 'center',
-                        verticalAlign: 'bottom'
-                    }
-                }
-            }]
-        },*/
         credits: {
             enabled: false
         },
-
     })
 
-    const [checked, setChecked] = useState(false)
+    const [showStrings, setShowStrings] = useState(false)
 
     const items = [
         {value:'Показатель'},
@@ -127,19 +89,13 @@ const App = () => {
   return (
       <div className='App'>
 
-          <DropDown data={data} checked={checked} setChecked={setChecked}/>
-
-
+          <DropDown data={data} showStrings={showStrings} setShowStrings={setShowStrings}/>
               <table className='table'>
                        <tr>
                           {items.map((item,index) =>
                               <th>{item.value}</th>
                           )}
                       </tr>
-
-
-
-
                   {data.map((item,index) =>
                       <>
                           {index === 1 &&
@@ -161,7 +117,7 @@ const App = () => {
                                   <>
                               {item.data.map((item,index) =>
 
-                                      <td /*className={!checked ? 'show__items' : ''}*/
+                                      <td className={!showStrings ? 'show__items' : ''}
                                           id={item.id}
                                           key={item.id}>{item}</td>
                                   )}

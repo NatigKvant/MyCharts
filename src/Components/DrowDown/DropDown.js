@@ -2,13 +2,13 @@ import React, {useState} from "react"
 import './DrowDown.css'
 import SettingsIcon from '@material-ui/icons/Settings'
 
-const DropDown = ({ data, checked, setChecked }) => {
+const DropDown = ({ data, showStrings, setShowStrings }) => {
 
     const [settingsMenuOpen, setSettingsMenuOpen] = useState(false)
 
     const handleChange = (e) => {
         let x = e.target.value
-            setChecked(!checked)
+            setShowStrings(!showStrings)
        }
 
 
@@ -29,7 +29,8 @@ const DropDown = ({ data, checked, setChecked }) => {
                                         <input type="checkbox"
                                                value={index}
                                                onChange={handleChange}
-                                               id={item.id} key={item.id}/>
+                                               id={item.id} key={item.id}
+                                        />
                                         }
                                         {item.name}
 
