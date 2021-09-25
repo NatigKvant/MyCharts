@@ -23,9 +23,9 @@
     border-bottom: 1px solid #a5a5a5;
 }
 
-.settings__menu ul li:hover{
+/*.settings__menu ul li:hover{
     color: grey;
-}
+}*/
 
 .settings__menu ul li input{
     display:block;

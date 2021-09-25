@@ -1,5 +1,4 @@
  export const highchartsCallback = (chart) => {
-
     chart.series.forEach((item, index) => {
         const td = document.createElement('td')
         td.textContent = item.name
@@ -25,3 +24,4 @@
         tbody.appendChild(tr)
     })
 }
+
