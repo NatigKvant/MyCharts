@@ -33,10 +33,6 @@
     }
 }
 
-.heading {
-    text-align: center;
-}
-
 .table {
     width: 100%;
     margin-bottom: 20px;
@@ -81,11 +77,11 @@
     padding: 0 15px;
 }
 
-.table .difference.green {
+.table td.green .difference {
     color: green;
 }
 
-.table .difference.red {
+.table td.red .difference {
     color: red;
 }
 
@@ -95,6 +91,18 @@
 
 .table td.red {
     background: #FCDDDB;
+}
+
+.table-value {
+    position: relative;
+}
+
+.rate {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
 }
 
 .header__table th {
