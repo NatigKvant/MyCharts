@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/MyCharts/static/css/main.afcc2d8a.chunk.css",
+    "main.js": "/MyCharts/static/js/main.f6686214.chunk.js",
+    "main.js.map": "/MyCharts/static/js/main.f6686214.chunk.js.map",
+    "runtime-main.js": "/MyCharts/static/js/runtime-main.593a9b27.js",
+    "runtime-main.js.map": "/MyCharts/static/js/runtime-main.593a9b27.js.map",
+    "static/css/2.f2512455.chunk.css": "/MyCharts/static/css/2.f2512455.chunk.css",
+    "static/js/2.481149b4.chunk.js": "/MyCharts/static/js/2.481149b4.chunk.js",
+    "static/js/2.481149b4.chunk.js.map": "/MyCharts/static/js/2.481149b4.chunk.js.map",
+    "static/js/3.0c9cbc40.chunk.js": "/MyCharts/static/js/3.0c9cbc40.chunk.js",
+    "static/js/3.0c9cbc40.chunk.js.map": "/MyCharts/static/js/3.0c9cbc40.chunk.js.map",
+    "index.html": "/MyCharts/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/MyCharts/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.afcc2d8a.chunk.css.map": "/MyCharts/static/css/main.afcc2d8a.chunk.css.map",
+    "static/js/2.481149b4.chunk.js.LICENSE.txt": "/MyCharts/static/js/2.481149b4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.593a9b27.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.481149b4.chunk.js",
+    "static/css/main.afcc2d8a.chunk.css",
+    "static/js/main.f6686214.chunk.js"
+  ]
+}
